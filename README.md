@@ -4,7 +4,7 @@
 `pip install kubernetes`
 
 
-# Python client for Promethues-deployment-using-k8s-python-client 
+# Python client for Prometheus-deployment-using-k8s-python-client 
 
 
 

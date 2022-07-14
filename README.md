@@ -14,7 +14,7 @@
 `configuration.api_key = {"authorization": "Bearer" + bearer_token}`
 
 We will use here the Bearer Token which enable requests to authenticate using an access key.
-Give your cluster details in prometheus_stack_deployement.py file:
+Give your cluster details in prom_stack.py file:
 ```
 cluster_details={
         "bearer_token":"<Your_cluster_bearer_token>",
@@ -24,14 +24,14 @@ cluster_details={
 
 ## Run .py file
 
-`$ python3 prometheus_stack_deployement.py`
+`$ python3 prom_stack.py`
 
 # Get the Prometheus server URL by running these commands in the same shell: 
 
    `$ export POD_NAME=$(kubectl get pods --namespace default -l "app=prometheus,component=server" -o jsonpath="{.items[0].metadata.name}")` \
    `$ kubectl --namespace default port-forward $POD_NAME 9090`
 
-# Access prometheus server on  below url
+# Access Prometheus server on  below url
 
   `http://localhost:9090`
 
